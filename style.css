@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
      scroll-behavior: smooth;
 }
 
@@ -171,12 +171,12 @@ a:hover{
 
 .video-texto {
   position: absolute;
-  top: 15px; /* distância do topo do vídeo */
+  top: 15px; 
   width: 100%;
   display: flex;
   justify-content: center;
   z-index: 2;
-  pointer-events: none; /* permite clicar no vídeo normalmente */
+  pointer-events: none;
 }
 
 
@@ -190,7 +190,7 @@ a:hover{
 
 .grid-servicos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 ou 3 por linha conforme espaço */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 2rem;
   padding: 1rem;
 }
@@ -265,8 +265,8 @@ a:hover{
 }
 
 .btn-agendar:hover {
-    background-color: #c2185b; /* Tom mais escuro no hover */
-    transform: scale(1.05); /* Efeito sutil de zoom */
+    background-color: #c2185b; 
+    transform: scale(1.05); /
 }
 /*Sobre tamiris*/
 
@@ -349,9 +349,9 @@ a:hover{
 }
 
 .avaliacao p{
-    font-style: italic;
+    font-style: oblique;
     margin-bottom: 1rem;
-    color: #333;
+    color: #000000;
 }
 
 .avaliacao strong{
