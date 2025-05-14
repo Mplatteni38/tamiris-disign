@@ -1,0 +1,533 @@
+*:root{
+    --dourado:#b0932a;
+    --bege:#d7d3c8;
+    --marrom:#836e5d;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+     scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bege);
+    padding-top: 0%;
+      
+}
+
+.cabeca{
+    
+    background-image: linear-gradient(to right,var(--marrom),#b0932a ,var(--bege));
+}
+
+.cabeca nav ul{
+    display: none;
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #b917682c;
+    padding: 0.8rem 3rem;
+
+}
+
+#burgue{
+    background-color: #000000;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 50px;
+   cursor: pointer;
+
+}
+
+#burgue:hover{
+    background-color: #b0932a;
+    color: #bd1468;
+}
+
+ul{
+   
+    padding: 50px;
+    
+     gap: 45px;
+    justify-content: center;
+    border: 3px salmon;
+    
+ 
+    
+}
+
+.menu{
+    display: none;
+}
+
+
+
+.menu a:hover{
+    background-color: #91275c;
+}
+
+.servicos a {
+ display: inline-block;
+  padding: 10px 10px;
+ text-decoration: none;
+ border-color: red ;
+  border-radius: 15px;
+  background-color: rgba(69, 87, 87, 0.459);
+ color: white;
+ border: 5px slid green;
+ 
+ 
+}
+
+a:hover{
+    color: var(--bege);
+}
+
+.logo-tamiris{
+  width: 25em;         
+          
+  border-radius: 45%;    
+  margin-left: auto;     
+   margin-top: 25px;
+}
+   
+
+
+ img{
+    display: block;
+    margin: 0 auto;
+    
+
+}
+
+
+/* parte do video */
+
+
+.video-conteiner {
+ 
+   
+ position: relative;
+  padding-top: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 800px; /* 👉 Limite o tamanho do vídeo */
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.video-salao {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+   
+  
+}
+
+
+.video-conteiner p {
+    font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #b0932a;
+  color: white;
+  border-radius: 50px;
+  width: 500px;
+  position: static;
+  transform: none;
+  padding: 10px 20px;
+  z-index: 2;
+
+}
+
+/*hemburgue*/
+
+
+
+
+/* Menu padrão */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+
+
+
+
+.video-texto {
+  position: absolute;
+  top: 15px; /* distância do topo do vídeo */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: none; /* permite clicar no vídeo normalmente */
+}
+
+
+/* serviços */
+
+.servicos h1{
+    text-align: center;
+    font-weight: bold;
+    font-size:  30px;
+}
+
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 ou 3 por linha conforme espaço */
+  gap: 2rem;
+  padding: 1rem;
+}
+
+    .servico p{
+        color: #b2e130;
+    }
+
+
+.servicos{
+ background-color: aqua;
+    padding: 1rem;
+      background-image: linear-gradient(to right,var(--marrom),#b0932a ,var(--bege));
+      text-align: center;
+
+}
+
+.servicos article{
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.servicos h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+
+}
+
+.servicos {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.servicos img {
+   width: 100%;
+    height: auto;
+   object-fit: contain;
+    
+    
+}
+
+.servico h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.servico p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+.btn-agendar{
+    font-size: 16px;
+    margin-top: 15px;
+    border-radius: 50px;
+    
+
+    
+}
+
+.btn-agendar:hover {
+    background-color: #c2185b; /* Tom mais escuro no hover */
+    transform: scale(1.05); /* Efeito sutil de zoom */
+}
+/*Sobre tamiris*/
+
+.sobre-tamiris{
+     background-image: linear-gradient(to top,var(--marrom),#b0932a ,var(--bege));
+    padding: 2rem;
+     gap: 15px;
+      
+         
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.3rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.sobre-conteudo img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.sobre-conteudo article{
+    max-width: 600px;
+
+}
+
+.sobre-conteudo h1{
+    margin-bottom: 1rem;
+}
+
+.sobre-conteudo p{
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* o que dizem nossos clientes*/
+.avaliacoes{
+      background-image: linear-gradient(to top,var(--bege),#c2a332 ,var(--marrom));
+      padding: 4rem 5rem;
+      text-align: center;
+
+
+}
+
+.caixa-avaliacoes h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  text-shadow: 1px 1px 1px rgba(182, 23, 23, 0.329);
+    
+
+}
+.avaliacoes-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.avaliacao{
+    background-color: var(--marrom);
+    border-radius: 20px;
+    padding: 1.4rem;
+    box-shadow: 0 4px 10px rgba(27, 2, 2, 0.5);
+    transition: transform 0.5s ease;
+
+}
+
+.avaliacao:hover{
+    transform: translateY(-10px);
+}
+
+.avaliacao .estrela {
+    font-size: 1.2rem;         
+    color: var(--dourado);    
+    margin-bottom: 0.5rem;
+}
+
+.avaliacao p{
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.avaliacao strong{
+    color: #25180c;
+    font-weight: bold;
+}
+
+/* rede social tamiris*/
+
+.rede-social{
+      background-image: linear-gradient(to top,var(--dourado),#c3a332 ,var(--bege));
+      padding: 2rem;
+      text-align: center;
+
+}
+
+.icone-instagram{
+    margin-bottom: 1.5rem;
+
+
+}
+
+.icone-instagram a{
+    font-size: 1.5rem;
+    color: #e1306c;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icone-instagram a:hover{
+    color: #c3a332;
+}
+
+.icone-instagram i{
+    font-style: 2rem;
+    
+}
+
+.imagem-unhas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.imagem-unhas img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shodow 0.3s;
+    cursor: pointer;
+}
+
+.imagem-unhas img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(87, 16, 16, 0.986);
+}
+
+/*contato*/
+
+.caixa-contato{
+         background-image: linear-gradient(to top,var(--bege),#928349 ,var(--dourado));
+         padding: 3rem 1rem;
+         display: flex;
+         justify-content: center;
+         align-items: center
+
+}
+
+.contato{
+      background-image: linear-gradient(to top,var(--bege),#928349 ,var(--dourado));
+   padding: 2rem 3rem;
+   border-radius: 20px;
+   box-shadow: 0 4px 12px black;
+   max-width: 500px;
+   text-align:center;
+   color: #333;
+
+   
+}
+
+.contato h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+
+}
+
+.contato h2,
+.contato h3{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+.contato p{
+    margin: 0.3rem 0;
+    font-size: 1rem;
+
+}
+
+.icones{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    color: #e1306c;
+   
+}
+
+.icones:hover{
+    transform: scale(1.3);
+    color: #e1306c;
+    text-shadow: 0 0 10px rgb(187, 14, 14);
+
+}
+
+/*rodape*/
+
+footer{
+      background-image: linear-gradient(to top, rgb(3, 2, 2),#928349 ,var(--bege));
+}
+
+footer p{
+    padding: 2rem ;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+footer a{
+    outline: none;
+    color: #b2e130;
+    
+}
+
+footer a:hover{
+    background-color: #e1cf30;
+    color: #030102;
+}
+
+
+/*responsivel celular*/
+
+@media (max-width: 768px) {
+  .sobre-conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-conteudo img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .avaliacoes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-conteiner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
